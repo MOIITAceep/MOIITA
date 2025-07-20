@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro - MOIITA</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Inter', sans-serif;
+                font-size:14px;
+            }
+            #esquerda{
+                background: #FFFFFF;
+                display: flex;
+                justify-content:center ;
+                align-items: center ;
+                height:100% ;
+                width: 40%;
+                float: left;
+            }
+            #direita{
+                background: #1F2937;
+                height:100% ;
+                width: 60%;
+                float: right;
+                display: flex;
+                justify-content:center ;
+                align-items: center ;
+            }
+            #logo{
+                background-color: #1F2937;
+                height: 90%;
+                aspect-ratio: 1 / 1;
+            }
+            button {
+                width: 100%;
+                padding:10px ;
+                background-color:#1F2937;
+                border:none ;
+                color: #FFFFFF;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #364a63;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="esquerda">
+            <form action="#" method="POST">
+                <h2>Cadastrar-se<h2>
+                   
+                Nome: 
+                <br>
+                <input type="text" name="nome" placeholder="Nome"><br><br>
+                   
+                E-mail: 
+                <br>
+                <input type="text" name="email" placeholder="E-mail"><br><br>
+                   
+                Data de Nascimento: 
+                <br>  
+                <input type="date" name="nascimento" placeholder="Data de Nascimento"><br><br>
+                   
+                Gênero: 
+                <br>
+                <select id="sexo" name="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <br><br>
+                       
+                Senha: 
+                <br> 
+                <input type="password" name="senha" placeholder="Senha"><br><br>
+                   
+                <button type="submit">CRIAR CONTA</button>
+                <br><br>
+                <button type="button" onclick="sair()">LOGIN</button>
+                <script>
+                    function sair(){
+                        window.location.href = "login.html";
+                    }
+                </script>
+            </form>       
+        </div>
+
+        <div id="direita">
+             <div id="logo">
+                <img src="https://i.postimg.cc/63KZXTM2/logo7moiita.png" height="100%" width="100%">
+             </div>
+        </div>
+    </body>
+</html>

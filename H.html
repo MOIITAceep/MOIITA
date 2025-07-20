@@ -1,0 +1,259 @@
+<html>
+    <head>
+        <title>Hidrogênio - MOIITA</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Inter', sans-serif;
+            }
+            #header{
+                background-color: #1E3A8A;
+                height: 10%;
+                width: 100%;
+                float: left;
+                font-size: 350%;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center ;
+            }
+                #moiita{
+                    background-color: #1E3A8A ;
+                    height: 60%;
+                    width: 10%;
+                    float: left;
+                    margin-left: 15%;
+                    text-align: center;
+                    font-size: 85%;
+                }
+                #logo{
+                    background-color: #1E3A8A;
+                    height: 90%;
+                    aspect-ratio: 1 / 1;
+                    float: left;
+                    margin-left: 30;
+                }
+                #sair{
+                    background-color: #1E3A8A ;
+                    height: 50%;
+                    width: 4%;
+                    float: left;
+                    margin-left: 5%;
+                    text-align: center;
+                    font-size: 35%;
+                }
+                #voltar{
+                    background-color: #1E3A8A ;
+                    height: 50%;
+                    width: 4%;
+                    float: left;
+                    margin-left: 45%;
+                    text-align: center;
+                    font-size: 35%;
+                }
+            #main{
+                background-color: #FFFFFF;
+                height: 85%;
+                width: 100%;
+                float: right;
+            }
+                #textomain{
+                    background-color: #FFFFFF;
+                    height: 90%;
+                    width: 70%;
+                    float: right;
+                    margin-top: 2%;
+                    margin-right: 3%;
+                    text-align: justify;
+                    text-indent: 25px;
+                }
+                #painel{
+                    height: 90%;
+                    width: 20%;
+                    background: #d5d5d5;
+                    border-radius: 2%;
+                    float: left;
+                    margin-top: 2%;
+                    margin-left: 3%;
+                }
+                    #elemento{
+                        background-color:#9ACD32;
+                        width: 90%;
+                        aspect-ratio: 1 / 1;
+                        float: left;
+                        margin-top: 5%;
+                        margin-left: 5%;
+                    }
+                        #numero{
+                            background: #9ACD32;
+                            height: 15%;
+                            aspect-ratio: 1 / 1;
+                            float: left;
+                            text-align: center;
+                            font-size: 300%;
+                        }
+                        #letra{
+                            background: #9ACD32;
+                            width: 60%;
+                            aspect-ratio: 1 / 1;
+                            float: right;
+                            text-align: center;
+                            margin-top: 10%;
+                            margin-right: 20%;
+                            font-size: 1000%;
+                            font-weight: bold;
+                        }
+                        #nome{
+                            background: #9ACD32;
+                            width: 70%;
+                            height: 15%;
+                            float: right;
+                            text-align: center;
+                            margin-right: 15%;
+                            font-size: 120%;
+                        }
+                    #legenda{
+                        background-color:#d5d5d5;
+                        height: 45%;
+                        width: 90%;
+                        float: left;
+                        margin-left: 5%;
+                        font-size: 89%;
+                        margin-top: 1%;
+                    }
+                        table{
+                            height: 100%;
+                            color: #1F2937;
+                        }
+            #footer{
+                background-color:   #1F2937;
+                height: 15%;
+                width: 100%;
+                float: left;
+                color: #FFFFFF;
+            }
+                hr{
+                    margin-left: 40px;
+                    margin-right: 40px;
+                }
+                #textrodape{
+                    text-align: justify;
+                    margin-left: 70px;
+                    font-size: 75%;
+                }
+            button{
+                height: 150%;
+                border: none;
+                color: #FFFFFF;
+                background: #1E3A8A;
+                font-size: 150%;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="moiita">
+                MOIITA
+            </div>
+            <div id="logo">
+                <img src="https://i.postimg.cc/63KZXTM2/logo7moiita.png" height="100%" width="100%">
+            </div>
+            <div id="voltar">
+                <button type="button" onclick="voltar()">voltar</button>
+                <script>
+                   function voltar(){
+                    window.location.href = "principal.html";
+                   }
+                </script>
+            </div>
+            <div id="sair">
+                <button type="button" onclick="sair()">sair</button>
+                <script>
+                   function sair(){
+                    window.location.href = "login.html";
+                   }
+                </script>
+            </div>
+        </div>
+
+
+        <div id="main">
+            <div id="painel">
+                <div id="elemento">
+                    <div id="numero">
+                        1
+                    </div>
+                    <div id="letra">
+                        H
+                    </div>
+                    <div id="nome">
+                        HIDROGÊNIO <br> 1,008
+                    </div>
+                </div>
+                <div id="legenda">
+                    <table>
+                        <tr><td><strong>Número Atômico:</strong> 1</td></tr>
+                        <tr><td><strong>Símbolo Químico:</strong> H</td></tr>
+                        <tr><td><strong>Massa Atômica:</strong> 1,008 u</td></tr>
+                        <tr><td><strong>Estado Físico Padrão:</strong> Gás</td></tr>
+                        <tr><td><strong>Eletronegatividade:</strong> 2,20</td></tr>
+                        <tr><td><strong>Raio Atômico:</strong> 53 pm</td></tr>
+                        <tr><td><strong>Energia de Ionização:</strong> 1312 kJ/mol</td></tr>
+                        <tr><td><strong>Configuração Eletrônica:</strong> 1s1</td></tr>
+                        <tr><td><strong>Classificação do Elemento:</strong> Não-metal</td></tr>
+                    </table>      
+                </div>
+            </div>
+            <div id="textomain">
+                <h2>Hidrogênio - Elemento 1</h2>
+                <p>
+                   O Hidrogênio é o primeiro elemento da tabela periódica, 
+                   com o símbolo H e número atômico 1. É o elemento mais 
+                   simples e abundante do universo, constituindo cerca de 
+                   75% de toda a massa bariônica. Na Terra, é mais comumente 
+                   encontrado na forma de água (H₂O) e em compostos orgânicos.
+                </p>
+                <h3>História e Descoberta</h3>
+                <p>
+                    O hidrogênio foi reconhecido como um elemento distinto em 
+                    1766 pelo químico britânico Henry Cavendish. Ele o chamou 
+                    de "ar inflamável" após observar que a queima do gás produzia 
+                    água. Mais tarde, em 1783, Antoine Lavoisier deu ao elemento o 
+                    nome "hidrogênio", que vem do grego hydro (água) e genes 
+                    (formador ou gerador), significando "gerador de água".
+                </p>
+                <h3>Aplicações e Usos Comuns</h3>
+                <p>
+                    Apesar de sua abundância, o hidrogênio puro não é encontrado facilmente 
+                    na Terra e precisa ser produzido. Seus usos são vastos e cruciais para a 
+                    ndústria moderna:
+                    <ul>
+                        <li><strong>Produção de Amônia:</strong> É um componente chave no processo Haber-Bosch para a fabricação de fertilizantes.</li>
+                        <br>
+                        <li><strong>Combustível:</strong> Utilizado como combustível para foguetes e está sendo explorado como uma fonte de energia limpa em células de combustível para veículos, pois sua queima produz apenas água.</li>
+                        <br>
+                        <li><strong>Indústria Alimentícia:</strong> Usado no processo de hidrogenação para converter óleos vegetais líquidos em gorduras sólidas ou semissólidas, como a margarina.</li>
+                        <br>
+                        <li><strong>Refino de Petróleo:</strong> Empregado para remover enxofre do petróleo bruto, um processo chamado de dessulfurização.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <br>
+            <p id="textrodape">
+               Termos de uso   ·   Privacidade   ·   Cookies
+            </p>
+            <hr color="#808080" size="1px">
+            <p id="textrodape">
+                MOIITA: plataforma de ensino
+                <br>© 2025 - 2025 7graus - Todos os direitos reservados.
+            </p>        
+        </div>
+    </body>
+</html>

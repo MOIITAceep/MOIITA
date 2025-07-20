@@ -1,0 +1,1487 @@
+<html>
+    <head>
+        <title>Tabela Periódica - MOIITA</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Inter', sans-serif;
+            }
+            #header{
+                background-color: #1E3A8A;
+                height: 10%;
+                width: 100%;
+                float: left;
+                font-size: 350%;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center ;
+            }
+            #moiita{
+                background-color: #1E3A8A ;
+                height: 60%;
+                width: 10%;
+                float: left;
+                margin-left: 15%;
+                text-align: center;
+                font-size: 85%;
+            }
+            #logo{
+                background-color: #1E3A8A;
+                height: 90%;
+                aspect-ratio: 1 / 1;
+                float: left;
+                margin-left: 30;
+            }
+            #sair{
+                background-color: #1E3A8A ;
+                height: 50%;
+                width: 4%;
+                float: left;
+                margin-left: 50%;
+                text-align: center;
+                font-size: 35%;
+            }
+            #main{
+                background-color: #FFFFFF;
+                height: 40%;
+                width: 100%;
+                float: left;
+            }
+            #lista{
+                background-color:#F9FAFB;
+                height: 90%;
+                width: 29%;
+                float: right;
+                border-radius: 10px;
+                margin-top: 20px;
+                margin-right: 35px;
+                font-size: 89%;
+                text-align: justify;
+            }
+            ul{
+                margin-right: 5%;
+            }
+            #textom{
+                text-align: justify;
+                margin-left: 60px;
+                background-color: #FFFFFF;
+                height: 90%;
+                width: 62%;
+                float: left;
+                margin-top: 20px;
+                margin-left: 50px;
+                text-indent: 25px;
+            }
+            #tabela{
+                background-color: #FFFFFF;
+                height: 60%;
+                width: 70%;
+                float: left;
+            }
+            #tp{
+                height: 80%;
+                width: 80%;
+                margin-top: 3%;
+            }
+            td{
+                border-radius: 12%;
+                text-align: center;
+               
+            }
+                #verde{
+                    background: #9ACD32;
+                }
+                #verde2{
+                    background: #9ACD32;
+                    width: 30px;
+                    height: 30px;
+                    text-align: left;
+                }
+                    #verdeb{
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        color: black;
+                        background: #9ACD32;
+                        font-size: 90%;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border-radius: 12%;
+                    }
+                        #verdeb:hover{
+                            background: #84b12c;
+                        }
+                #azule{
+                    background: #00BFFF;
+                }
+                #azule2{
+                    background: #00BFFF;
+                    width: 30px;
+                    height: 30px;
+                    text-align: left;
+                }
+                    #azuleb{
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        color: black;
+                        background: #00BFFF;
+                        font-size: 100%;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border-radius: 12%;
+                    }
+                    #azuleb:hover{
+                        background: #0f91bd;
+                    }
+                #laranja{
+                    background: #DAA520;
+                }
+                #laranja2{
+                    background: #DAA520;
+                    width: 30px;
+                    height: 30px;
+                    text-align: left;
+                }
+                    #laranjab{
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        color: black;
+                        background: #DAA520;
+                        font-size: 100%;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border-radius: 12%;
+                    }
+                    #laranjab:hover{
+                        background: #af851b;
+                    }
+                #amarelo{
+                    background: #FFFF00;
+                }
+                #amarelo2{
+                    background: #FFFF00;
+                    width: 30px;
+                    height: 30px;
+                    text-align: left;
+                }
+                    #amarelob{
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        color: black;
+                        background: #FFFF00;
+                        font-size: 100%;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border-radius: 12%;
+                    }
+                    #amarelob:hover{
+                        background: #b9b900;
+                    }
+                #verdea{
+                    background: #00CED1;
+                }
+                #verdea2{
+                    background: #00CED1;
+                    width: 30px;
+                    height: 30px;
+                    text-align: left;
+                }
+                    #verdeab{
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        color: black;
+                        background: #00CED1;
+                        font-size: 100%;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border-radius: 12%;
+                    }
+                    #verdeab:hover{
+                        background: #01a9ac;
+                    }
+                #azulc{
+                    background: #87CEFA;
+                }
+                #azulc2{
+                    background: #87CEFA;
+                    width: 30px;
+                    height: 30px;
+                    text-align: left;
+                }
+                    #azulcb{
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        color: black;
+                        background: #87CEFA;
+                        font-size: 100%;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border-radius: 12%;
+                    }
+                    #azulcb:hover{
+                        background: #6ca5c9;
+                    }
+                #cinza{
+                    background: #B0C4DE;
+                }
+                #cinza2{
+                    background: #B0C4DE;
+                    width: 30px;
+                    height: 30px;
+                    text-align: left;
+                }
+                    #cinzab{
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        color: black;
+                        background: #B0C4DE;
+                        font-size: 100%;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border-radius: 12%;
+                    }
+                    #cinzab:hover{
+                        background: #97a8be;
+                    }
+                #rosa{
+                    background: #F08080;
+                }
+                #rosa2{
+                    background: #F08080;
+                    width: 30px;
+                    height: 30px;
+                    text-align: left;
+                }
+                    #rosab{
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        color: black;
+                        background: #F08080;
+                        font-size: 100%;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border-radius: 12%;
+                    }
+                    #rosab:hover{
+                        background: #c56a6a;
+                    }
+                #ciano{
+                    background: #00FFFF;
+                }
+                #ciano2{
+                    background: #00FFFF;
+                    width: 30px;
+                    height: 30px;
+                    text-align: left;
+                }
+                    #cianob{
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        color: black;
+                        background: #00FFFF;
+                        font-size: 100%;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border-radius: 12%;
+                    }
+                    #cianob:hover{
+                        background: #00c2c2;
+                    }
+                #roxo{
+                    background: #D8BFD8;
+                }
+                #roxo2{
+                    background: #D8BFD8;
+                    width: 30px;
+                    height: 30px;
+                    text-align: left;
+                }
+                    #roxob{
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        color: black;
+                        background: #D8BFD8;
+                        font-size: 100%;
+                        cursor: pointer;
+                        font-weight: bold;
+                        border-radius: 12%;
+                    }
+                    #roxob:hover{
+                        background: #b4a0b4;
+                    }
+            #direita2{
+                height: 60%;
+                width: 30%;
+                background: #FFFFFF;
+                float: right;
+            }
+                #legenda{
+                    height: 90%;
+                    width:90%;
+                    margin-top: 5%;
+                    margin-right: 10%;
+                    background: #FFFFFF;
+                    border-radius: 3%;
+                }
+                #esquerdatexto{
+                    text-align: left;
+                }
+            #footer{
+                background-color:   #1F2937;
+                height: 15%;
+                width: 100%;
+                float: left;
+                color: #FFFFFF;
+            }
+                hr{
+                    margin-left: 40px;
+                    margin-right: 40px;
+                }
+                #tr{
+                    text-align: justify;
+                    margin-left: 70px;
+                    font-size: 75%;
+                }
+            button{
+                height: 150%;
+                border: none;
+                color: #FFFFFF;
+                background: #1E3A8A;
+                font-size: 150%;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="moiita">
+                MOIITA
+            </div>
+            <div id="logo">
+                <img src="https://i.postimg.cc/63KZXTM2/logo7moiita.png" height="100%" width="100%">
+            </div>
+            <div id="sair">
+                <button type="button" onclick="sair()">sair</button>
+                <script>
+                   function sair(){
+                    window.location.href = "login.html";
+                   }
+                </script>
+            </div>
+        </div>
+
+
+        <div id="main">
+            <div id="lista">
+                <ul>
+                    <li><strong>Número atômico</strong> – define a posição do elemento na tabela</li>
+                    <li><strong>Símbolo químico</strong> – abreviação internacional do nome</li>
+                    <li><strong>Massa atômica</strong> – média dos isótopos, usada em cálculos químicos</li>
+                    <li><strong>Estado físico padrão</strong> – sólido, líquido ou gasoso</li>
+                    <li><strong>Eletronegatividade</strong> – tendência de atrair elétrons em ligações</li>
+                    <li><strong>Raio atômico</strong> – tamanho relativo do átomo</li>
+                    <li><strong>Energia de ionização</strong> – energia para remover um elétron</li>
+                    <li><strong>Configuração eletrônica</strong> – distribuição dos elétrons nos orbitais</li>
+                    <li><strong>Classificação do elemento</strong> – metal, não-metal, gás nobre, etc.</li>
+                </ul>
+            </div>
+            <div id="textom">
+                <h2>Tabela Periódica</h2>
+                <p>
+                    A tabela periódica é uma ferramenta essencial da ciência
+                     que organiza todos os elementos químicos conhecidos de forma
+                     sistemática. Criada em 1869 pelo químico russo Dmitri Mendeleev,
+                     ela surgiu como uma forma de agrupar os elementos com propriedades
+                     semelhantes e até prever a existência de elementos ainda não
+                     descobertos. Hoje, a tabela conta com 118 elementos, distribuídos
+                     por grupos e períodos que revelam padrões como reatividade, eletronegatividade e estado físico.
+                <p>
+                    Cada elemento é representado por informações como símbolo químico,
+                     número atômico e massa atômica, permitindo aos cientistas compreender
+                      e prever o comportamento dos átomos. Além de ser indispensável para
+                      profissionais da química, a tabela é amplamente usada em áreas como
+                      medicina, engenharia e educação, tornando-se uma linguagem universal da ciência.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="tabela">
+            <center>
+            <table id="tp">
+                <tr>    
+                    <td id="verde">
+                        <button id="verdeb" type="button" onclick="H()">H</button>
+                        <script>
+                            function H(){
+                                window.location.href = "H.html";
+                            }
+                        </script>
+                    </td>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    <td id="azule">
+                        <button id="azuleb" type="button" onclick="He()">He</button>
+                        <script>
+                            function He(){
+                                window.location.href = "He.html";
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="laranja">
+                        <button id="laranjab" type="button" onclick="Li()">Li</button>
+                        <script>
+                            function Li(){
+                                window.location.href = "Li.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="amarelo">
+                        <button id="amarelob" type="button" onclick="Be()">Be</button>
+                        <script>
+                            function Be(){
+                                window.location.href = "Be.html";
+                            }
+                        </script>
+                    </td>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    <td id="verdea">
+                        <button id="verdeab" type="button" onclick="B()">B</button>
+                        <script>
+                            function B(){
+                                window.location.href = "B.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verde">
+                        <button id="verdeb" type="button" onclick="C()">C</button>
+                        <script>
+                            function C(){
+                                window.location.href = "C.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verde">
+                        <button id="verdeb" type="button" onclick="N()">N</button>
+                        <script>
+                            function N(){
+                                window.location.href = "N.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verde">
+                        <button id="verdeb" type="button" onclick="O()">O</button>
+                        <script>
+                            function O(){
+                                window.location.href = "O.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azulc">
+                        <button id="azulcb" type="button" onclick="F()">F</button>
+                        <script>
+                            function F(){
+                                window.location.href = "F.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azule">
+                        <button id="azuleb" type="button" onclick="Ne()">Ne</button>
+                        <script>
+                            function Ne(){
+                                window.location.href = "Ne.html";
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="laranja">
+                        <button id="laranjab" type="button" onclick="Na()">Na</button>
+                        <script>
+                            function Na(){
+                                window.location.href = "Na.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="amarelo">
+                        <button id="amarelob" type="button" onclick="Mg()">Mg</button>
+                        <script>
+                            function Mg(){
+                                window.location.href = "Mg.html";
+                            }
+                        </script>
+                    </td>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    <td id="cinza">
+                        <button id="cinzab" type="button" onclick="Al()">Al</button>
+                        <script>
+                            function Al(){
+                                window.location.href = "Al.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verdea">
+                        <button id="verdeab" type="button" onclick="Si()">Si</button>
+                        <script>
+                            function Si(){
+                                window.location.href = "Si.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verde">
+                        <button id="verdeb" type="button" onclick="P()">P</button>
+                        <script>
+                            function P(){
+                                window.location.href = "P.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verde">
+                        <button id="verdeb" type="button" onclick="S()">S</button>
+                        <script>
+                            function S(){
+                                window.location.href = "S.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azulc">
+                        <button id="azulcb" type="button" onclick="Cl()">Cl</button>
+                        <script>
+                            function Cl(){
+                                window.location.href = "Cl.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azule">
+                        <button id="azuleb" type="button" onclick="Ar()">Ar</button>
+                        <script>
+                            function Ar(){
+                                window.location.href = "Ar.html";
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="laranja">
+                        <button id="laranjab" type="button" onclick="K()">K</button>
+                        <script>
+                            function K(){
+                                window.location.href = "K.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="amarelo">
+                        <button id="amarelob" type="button" onclick="Ca()">Ca</button>
+                        <script>
+                            function Ca(){
+                                window.location.href = "Ca.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Sc()">Sc</button>
+                        <script>
+                            function Sc(){
+                                window.location.href = "Sc.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Ti()">Ti</button>
+                        <script>
+                            function Ti(){
+                                window.location.href = "Ti.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="V()">V</button>
+                        <script>
+                            function V(){
+                                window.location.href = "V.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Cr()">Cr</button>
+                        <script>
+                            function Cr(){
+                                window.location.href = "Cr.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Mn()">Mn</button>
+                        <script>
+                            function Mn(){
+                                window.location.href = "Mn.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Fe()">Fe</button>
+                        <script>
+                            function Fe(){
+                                window.location.href = "Fe.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Co()">Co</button>
+                        <script>
+                            function Co(){
+                                window.location.href = "Co.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Ni()">Ni</button>
+                        <script>
+                            function Ni(){
+                                window.location.href = "Ni.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Cu()">Cu</button>
+                        <script>
+                            function Cu(){
+                                window.location.href = "Cu.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Zn()">Zn</button>
+                        <script>
+                            function Zn(){
+                                window.location.href = "Zn.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="cinza">
+                        <button id="cinzab" type="button" onclick="Ga()">Ga</button>
+                        <script>
+                            function Ga(){
+                                window.location.href = "Ga.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verdea">
+                        <button id="verdeab" type="button" onclick="Ge()">Ge</button>
+                        <script>
+                            function Ge(){
+                                window.location.href = "Ge.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verdea">
+                        <button id="verdeab" type="button" onclick="As()">As</button>
+                        <script>
+                            function As(){
+                                window.location.href = "As.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verde">
+                        <button id="verdeb" type="button" onclick="Se()">Se</button>
+                        <script>
+                            function Se(){
+                                window.location.href = "Se.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azulc">
+                        <button id="azulcb" type="button" onclick="Br()">Br</button>
+                        <script>
+                            function Br(){
+                                window.location.href = "Br.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azule">
+                        <button id="azuleb" type="button" onclick="Kr()">Kr</button>
+                        <script>
+                            function Kr(){
+                                window.location.href = "Kr.html";
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="laranja">
+                        <button id="laranjab" type="button" onclick="Rb()">Rb</button>
+                        <script>
+                            function Rb(){
+                                window.location.href = "Rb.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="amarelo">
+                        <button id="amarelob" type="button" onclick="Sr()">Sr</button>
+                        <script>
+                            function Sr(){
+                                window.location.href = "Sr.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Y()">Y</button>
+                        <script>
+                            function Y(){
+                                window.location.href = "Y.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Zr()">Zr</button>
+                        <script>
+                            function Zr(){
+                                window.location.href = "Zr.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Nb()">Nb</button>
+                        <script>
+                            function Nb(){
+                                window.location.href = "Nb.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Mo()">Mo</button>
+                        <script>
+                            function Mo(){
+                                window.location.href = "Mo.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Tc()">Tc</button>
+                        <script>
+                            function Tc(){
+                                window.location.href = "Tc.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Ru()">Ru</button>
+                        <script>
+                            function Ru(){
+                                window.location.href = "Ru.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Rh()">Rh</button>
+                        <script>
+                            function Rh(){
+                                window.location.href = "Rh.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Pd()">Pd</button>
+                        <script>
+                            function Pd(){
+                                window.location.href = "Pd.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Ag()">Ag</button>
+                        <script>
+                            function Ag(){
+                                window.location.href = "Ag.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Cd()">Cd</button>
+                        <script>
+                            function Cd(){
+                                window.location.href = "Cd.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="cinza">
+                        <button id="cinzab" type="button" onclick="In()">In</button>
+                        <script>
+                            function In(){
+                                window.location.href = "In.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="cinza">
+                        <button id="cinzab" type="button" onclick="Sn()">Sn</button>
+                        <script>
+                            function Sn(){
+                                window.location.href = "Sn.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verdea">
+                        <button id="verdeab" type="button" onclick="Sb()">Sb</button>
+                        <script>
+                            function Sb(){
+                                window.location.href = "Sb.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verdea">
+                        <button id="verdeab" type="button" onclick="Te()">Te</button>
+                        <script>
+                            function Te(){
+                                window.location.href = "Te.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azulc">
+                        <button id="azulcb" type="button" onclick="I()">I</button>
+                        <script>
+                            function I(){
+                                window.location.href = "I.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azule">
+                        <button id="azuleb" type="button" onclick="Xe()">Xe</button>
+                        <script>
+                            function Xe(){
+                                window.location.href = "Xe.html";
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="laranja">
+                        <button id="laranjab" type="button" onclick="Cs()">Cs</button>
+                        <script>
+                            function Cs(){
+                                window.location.href = "Cs.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="amarelo">
+                        <button id="amarelob" type="button" onclick="Ba()">Ba</button>
+                        <script>
+                            function Ba(){
+                                window.location.href = "Ba.html";
+                            }
+                        </script>
+                    </td>
+                    <td></td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Hf()">Hf</button>
+                        <script>
+                            function Hf(){
+                                window.location.href = "Hf.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Ta()">Ta</button>
+                        <script>
+                            function Ta(){
+                                window.location.href = "Ta.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="W()">W</button>
+                        <script>
+                            function W(){
+                                window.location.href = "W.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Re()">Re</button>
+                        <script>
+                            function Re(){
+                                window.location.href = "Re.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Os()">Os</button>
+                        <script>
+                            function Os(){
+                                window.location.href = "Os.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Ir()">Ir</button>
+                        <script>
+                            function Ir(){
+                                window.location.href = "Ir.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Pt()">Pt</button>
+                        <script>
+                            function Pt(){
+                                window.location.href = "Pt.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Au()">Au</button>
+                        <script>
+                            function Au(){
+                                window.location.href = "Au.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Hg()">Hg</button>
+                        <script>
+                            function Hg(){
+                                window.location.href = "Hg.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="cinza">
+                        <button id="cinzab" type="button" onclick="Tl()">Tl</button>
+                        <script>
+                            function Tl(){
+                                window.location.href = "Tl.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="cinza">
+                        <button id="cinzab" type="button" onclick="Pb()">Pb</button>
+                        <script>
+                            function Pb(){
+                                window.location.href = "Pb.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="cinza">
+                        <button id="cinzab" type="button" onclick="Bi()">Bi</button>
+                        <script>
+                            function Bi(){
+                                window.location.href = "Bi.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="verdea">
+                        <button id="verdeab" type="button" onclick="Po()">Po</button>
+                        <script>
+                            function Po(){
+                                window.location.href = "Po.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azulc">
+                        <button id="azulcb" type="button" onclick="At()">At</button>
+                        <script>
+                            function At(){
+                                window.location.href = "At.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azule">
+                        <button id="azuleb" type="button" onclick="Rn()">Rn</button>
+                        <script>
+                            function Rn(){
+                                window.location.href = "Rn.html";
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="laranja">
+                        <button id="laranjab" type="button" onclick="Fr()">Fr</button>
+                        <script>
+                            function Fr(){
+                                window.location.href = "Fr.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="amarelo">
+                        <button id="amarelob" type="button" onclick="Ra()">Ra</button>
+                        <script>
+                            function Ra(){
+                                window.location.href = "Ra.html";
+                            }
+                        </script>
+                    </td>
+                    <td></td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Rf()">Rf</button>
+                        <script>
+                            function Rf(){
+                                window.location.href = "Rf.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Db()">Db</button>
+                        <script>
+                            function Db(){
+                                window.location.href = "Db.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Sg()">Sg</button>
+                        <script>
+                            function Sg(){
+                                window.location.href = "Sg.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Bh()">Bh</button>
+                        <script>
+                            function Bh(){
+                                window.location.href = "Bh.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Hs()">Hs</button>
+                        <script>
+                            function Hs(){
+                                window.location.href = "Hs.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Mt()">Mt</button>
+                        <script>
+                            function Mt(){
+                                window.location.href = "Mt.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Ds()">Ds</button>
+                        <script>
+                            function Ds(){
+                                window.location.href = "Ds.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Rg()">Rg</button>
+                        <script>
+                            function Rg(){
+                                window.location.href = "Rg.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="rosa">
+                        <button id="rosab" type="button" onclick="Cn()">Cn</button>
+                        <script>
+                            function Cn(){
+                                window.location.href = "Cn.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="cinza">
+                        <button id="cinzab" type="button" onclick="Nh()">Nh</button>
+                        <script>
+                            function Nh(){
+                                window.location.href = "Nh.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="cinza">
+                        <button id="cinzab" type="button" onclick="Fl()">Fl</button>
+                        <script>
+                            function Fl(){
+                                window.location.href = "Fl.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="cinza">
+                        <button id="cinzab" type="button" onclick="Mc()">Mc</button>
+                        <script>
+                            function Mc(){
+                                window.location.href = "Mc.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="cinza">
+                        <button id="cinzab" type="button" onclick="Lv()">Lv</button>
+                        <script>
+                            function Lv(){
+                                window.location.href = "Lv.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azulc">
+                        <button id="azulcb" type="button" onclick="Ts()">Ts</button>
+                        <script>
+                            function Ts(){
+                                window.location.href = "Ts.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="azule">
+                        <button id="azuleb" type="button" onclick="Og()">Og</button>
+                        <script>
+                            function Og(){
+                                window.location.href = "Og.html";
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="La()">La</button>
+                        <script>
+                            function La(){
+                                window.location.href = "La.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Ce()">Ce</button>
+                        <script>
+                            function Ce(){
+                                window.location.href = "Ce.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Pr()">Pr</button>
+                        <script>
+                            function Pr(){
+                                window.location.href = "Pr.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Nd()">Nd</button>
+                        <script>
+                            function Nd(){
+                                window.location.href = "Nd.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Pm()">Pm</button>
+                        <script>
+                            function Pm(){
+                                window.location.href = "Pm.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Sm()">Sm</button>
+                        <script>
+                            function Sm(){
+                                window.location.href = "Sm.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Eu()">Eu</button>
+                        <script>
+                            function Eu(){
+                                window.location.href = "Eu.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Gd()">Gd</button>
+                        <script>
+                            function Gd(){
+                                window.location.href = "Gd.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Tb()">Tb</button>
+                        <script>
+                            function Tb(){
+                                window.location.href = "Tb.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Dy()">Dy</button>
+                        <script>
+                            function Dy(){
+                                window.location.href = "Dy.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Ho()">Ho</button>
+                        <script>
+                            function Ho(){
+                                window.location.href = "Ho.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Er()">Er</button>
+                        <script>
+                            function Er(){
+                                window.location.href = "Er.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Tm()">Tm</button>
+                        <script>
+                            function Tm(){
+                                window.location.href = "Tm.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Yb()">Yb</button>
+                        <script>
+                            function Yb(){
+                                window.location.href = "Yb.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="ciano">
+                        <button id="cianob" type="button" onclick="Lu()">Lu</button>
+                        <script>
+                            function Lu(){
+                                window.location.href = "Lu.html";
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Ac()">Ac</button>
+                        <script>
+                            function Ac(){
+                                window.location.href = "Ac.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Th()">Th</button>
+                        <script>
+                            function Th(){
+                                window.location.href = "Th.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Pa()">Pa</button>
+                        <script>
+                            function Pa(){
+                                window.location.href = "Pa.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="U()">U</button>
+                        <script>
+                            function U(){
+                                window.location.href = "U.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Np()">Np</button>
+                        <script>
+                            function Np(){
+                                window.location.href = "Np.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Pu()">Pu</button>
+                        <script>
+                            function Pu(){
+                                window.location.href = "Pu.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Am()">Am</button>
+                        <script>
+                            function Am(){
+                                window.location.href = "Am.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Cm()">Cm</button>
+                        <script>
+                            function Cm(){
+                                window.location.href = "Cm.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Bk()">Bk</button>
+                        <script>
+                            function Bk(){
+                                window.location.href = "Bk.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Cf()">Cf</button>
+                        <script>
+                            function Cf(){
+                                window.location.href = "Cf.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Es()">Es</button>
+                        <script>
+                            function Es(){
+                                window.location.href = "Es.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Fm()">Fm</button>
+                        <script>
+                            function Fm(){
+                                window.location.href = "Fm.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Md()">Md</button>
+                        <script>
+                            function Md(){
+                                window.location.href = "Md.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="No()">No</button>
+                        <script>
+                            function No(){
+                                window.location.href = "No.html";
+                            }
+                        </script>
+                    </td>
+                    <td id="roxo">
+                        <button id="roxob" type="button" onclick="Lr()">Lr</button>
+                        <script>
+                            function Lr(){
+                                window.location.href = "Lr.html";
+                            }
+                        </script>
+                    </td>
+                </tr>
+            </table>
+            </center>
+        </div>
+
+
+        <div id="direita2">
+            <div id="legenda">
+                <table>
+                    <tr>
+                        <td id="verde2"></td><td></td><td id="esquerdatexto">Não metais</td>
+                    </tr>
+                    
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    
+                    <tr>
+                        <td id="azule2"></td><td></td><td id="esquerdatexto">Gases nobres</td>
+                    </tr>
+
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    
+                    <tr>
+                        <td id="laranja2"></td><td></td><td id="esquerdatexto">Metais alcalinos</td>
+                    </tr>
+                    
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+
+                    <tr>
+                        <td id="amarelo2"></td><td></td><td id="esquerdatexto">Metais alcalino-terrosos</td>
+                    </tr>
+
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    
+                    <tr>
+                        <td id="verdea2"></td><td></td><td id="esquerdatexto">Semimetais</td>
+                    </tr>
+
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+
+                    <tr>
+                        <td id="azulc2"></td><td></td><td id="esquerdatexto">Halogênios</td>
+                    </tr>
+
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    
+                    <tr>
+                        <td id="cinza2"></td><td></td><td id="esquerdatexto">Outros metais</td>
+                    </tr>
+
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+
+                    <tr>
+                        <td id="rosa2"></td><td></td><td id="esquerdatexto">Metais de transição</td>
+                    </tr>
+                    
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    
+                    <tr>
+                        <td id="ciano2"></td><td></td><td id="esquerdatexto">Lantanídeos</td>
+                    </tr>
+
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    <tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
+                    
+                    <tr>
+                        <td id="roxo2"></td><td></td><td id="esquerdatexto">Actinídios</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+       
+
+        <div id="footer">
+            <br>
+            <p id="tr">
+               Termos de uso   ·   Privacidade   ·   Cookies
+            </p>
+            <hr color="#808080" size="1px">
+            <p id="tr">
+                MOIITA: plataforma de ensino
+                <br>© 2025 - 2025 7graus - Todos os direitos reservados.
+            </p>        
+        </div>
+    </body>
+</html>

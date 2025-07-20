@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <title>Carbono - MOIITA</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Inter', sans-serif;
+            }
+            #header{
+                background-color: #1E3A8A;
+                height: 10%;
+                width: 100%;
+                float: left;
+                font-size: 350%;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center ;
+            }
+                #moiita{
+                    background-color: #1E3A8A ;
+                    height: 60%;
+                    width: 10%;
+                    float: left;
+                    margin-left: 15%;
+                    text-align: center;
+                    font-size: 85%;
+                }
+                #logo{
+                    background-color: #1E3A8A;
+                    height: 90%;
+                    aspect-ratio: 1 / 1;
+                    float: left;
+                    margin-left: 30;
+                }
+                #sair{
+                    background-color: #1E3A8A ;
+                    height: 50%;
+                    width: 4%;
+                    float: left;
+                    margin-left: 5%;
+                    text-align: center;
+                    font-size: 35%;
+                }
+                #voltar{
+                    background-color: #1E3A8A ;
+                    height: 50%;
+                    width: 4%;
+                    float: left;
+                    margin-left: 45%;
+                    text-align: center;
+                    font-size: 35%;
+                }
+            #main{
+                background-color: #FFFFFF;
+                height: 85%;
+                width: 100%;
+                float: right;
+            }
+                #textomain{
+                    background-color: #FFFFFF;
+                    height: 90%;
+                    width: 70%;
+                    float: right;
+                    margin-top: 2%;
+                    margin-right: 3%;
+                    text-align: justify;
+                    text-indent: 25px;
+                }
+                #painel{
+                    height: 90%;
+                    width: 20%;
+                    background: #d5d5d5;
+                    border-radius: 2%;
+                    float: left;
+                    margin-top: 2%;
+                    margin-left: 3%;
+                }
+                    #elemento{
+                        background-color:#9ACD32;
+                        width: 90%;
+                        aspect-ratio: 1 / 1;
+                        float: left;
+                        margin-top: 5%;
+                        margin-left: 5%;
+                    }
+                        #numero{
+                            background: #9ACD32;
+                            height: 15%;
+                            aspect-ratio: 1 / 1;
+                            float: left;
+                            text-align: center;
+                            font-size: 300%;
+                        }
+                        #letra{
+                            background: #9ACD32;
+                            width: 60%;
+                            aspect-ratio: 1 / 1;
+                            float: right;
+                            text-align: center;
+                            margin-top: 10%;
+                            margin-right: 20%;
+                            font-size: 1000%;
+                            font-weight: bold;
+                        }
+                        #nome{
+                            background: #9ACD32;
+                            width: 70%;
+                            height: 15%;
+                            float: right;
+                            text-align: center;
+                            margin-right: 15%;
+                            font-size: 120%;
+                        }
+                    #legenda{
+                        background-color:#d5d5d5;
+                        height: 45%;
+                        width: 90%;
+                        float: left;
+                        margin-left: 5%;
+                        font-size: 89%;
+                        margin-top: 1%;
+                    }
+                        table{
+                            height: 100%;
+                            color: #1F2937;
+                        }
+            #footer{
+                background-color:   #1F2937;
+                height: 15%;
+                width: 100%;
+                float: left;
+                color: #FFFFFF;
+            }
+                hr{
+                    margin-left: 40px;
+                    margin-right: 40px;
+                }
+                #textrodape{
+                    text-align: justify;
+                    margin-left: 70px;
+                    font-size: 75%;
+                }
+            button{
+                height: 150%;
+                border: none;
+                color: #FFFFFF;
+                background: #1E3A8A;
+                font-size: 150%;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="moiita">
+                MOIITA
+            </div>
+            <div id="logo">
+                <img src="https://i.postimg.cc/63KZXTM2/logo7moiita.png" height="100%" width="100%">
+            </div>
+            <div id="voltar">
+                <button type="button" onclick="voltar()">voltar</button>
+                <script>
+                   function voltar(){
+                    window.location.href = "principal.html";
+                   }
+                </script>
+            </div>
+            <div id="sair">
+                <button type="button" onclick="sair()">sair</button>
+                <script>
+                   function sair(){
+                    window.location.href = "login.html";
+                   }
+                </script>
+            </div>
+        </div>
+
+
+        <div id="main">
+            <div id="painel">
+                <div id="elemento">
+                    <div id="numero">
+                        6
+                    </div>
+                    <div id="letra">
+                        C
+                    </div>
+                    <div id="nome">
+                        CARBONO <br> 12,011
+                    </div>
+                </div>
+                <div id="legenda">
+                    <table>
+                        <tr><td><strong>Número Atômico:</strong> 6</td></tr>
+                        <tr><td><strong>Símbolo Químico:</strong> C</td></tr>
+                        <tr><td><strong>Massa Atômica:</strong> 12,011 u</td></tr>
+                        <tr><td><strong>Estado Físico Padrão:</strong> Sólido</td></tr>
+                        <tr><td><strong>Eletronegatividade:</strong> 2,55</td></tr>
+                        <tr><td><strong>Raio Atômico:</strong> 67 pm</td></tr>
+                        <tr><td><strong>Energia de Ionização:</strong> 1086,5 kJ/mol</td></tr>
+                        <tr><td><strong>Configuração Eletrônica:</strong> [He]2s²2p²</td></tr>
+                        <tr><td><strong>Classificação do Elemento:</strong> Não-metal</td></tr>
+                    </table>      
+                </div>
+            </div>
+            <div id="textomain">
+                <h2>Carbono - Elemento 6</h2>
+                <p>
+                   O Carbono é o sexto elemento da tabela periódica, com o símbolo C e número atômico 6. 
+                   É um dos elementos mais importantes e versáteis da natureza, sendo a base de toda a vida 
+                   orgânica na Terra. Ele forma uma vasta gama de compostos, mais do que qualquer outro elemento, 
+                   devido à sua capacidade única de se ligar a outros átomos de carbono e a uma infinidade de outros 
+                   elementos. É encontrado em diversas formas, desde o diamante, um dos materiais mais duros, até o 
+                   grafite, um lubrificante macio.
+                </p>
+                <h3>História e Descoberta</h3>
+                <p>
+                    O carbono é um dos poucos elementos que foram descobertos na antiguidade, pois existe livremente 
+                    na natureza em formas como a fuligem, carvão, grafite e diamante. Seus compostos, como o carbono 
+                    orgânico, são conhecidos e utilizados há milhares de anos. No entanto, foi Antoine Lavoisier quem 
+                    o reconheceu como um elemento químico em 1789, demonstrando que o diamante e o carvão eram formas 
+                    diferentes do mesmo elemento. O nome "carbono" deriva do latim carbo, que significa "carvão".
+                </p>
+                <h3>Aplicações e Usos Comuns</h3>
+                <p>
+                    A versatilidade do carbono se reflete em suas inúmeras aplicações, que vão desde a energia até 
+                    materiais de alta tecnologia. Sua capacidade de formar ligações estáveis e diversas permite que 
+                    ele seja um pilar em várias indústrias e na própria vida.
+                    <ul>
+                        <li><strong>Combustíveis Fósseis:</strong> Principal componente de combustíveis como carvão, petróleo e gás natural, que são fontes primárias de energia para o mundo.</li>
+                        <li><strong>Indústria Siderúrgica:</strong> Essencial na produção de aço, onde o carbono é adicionado ao ferro para aumentar sua resistência e dureza, sendo vital para a construção e manufatura.</li>
+                        <li><strong>Materiais Estruturais:</strong> Utilizado em compósitos de fibra de carbono para a fabricação de componentes leves e resistentes, amplamente empregados em aeronaves, carros de corrida e equipamentos esportivos de alta performance.</li>
+                        <li><strong>Joias e Ferramentas:</strong> O diamante, uma das formas mais conhecidas do carbono, é valorizado como gema e também empregado em ferramentas de corte e perfuração devido à sua extrema dureza e durabilidade.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <br>
+            <p id="textrodape">
+               Termos de uso   ·   Privacidade   ·   Cookies
+            </p>
+            <hr color="#808080" size="1px">
+            <p id="textrodape">
+                MOIITA: plataforma de ensino
+                <br>© 2025 - 2025 7graus - Todos os direitos reservados.
+            </p>        
+        </div>
+    </body>
+</html>

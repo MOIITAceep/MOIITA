@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login - MOIITA</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Inter', sans-serif;
+            }
+            #esquerda{
+                background: #FFFFFF;
+                display: flex;
+                justify-content:center ;
+                align-items: center ;
+                height:100% ;
+                width: 40%;
+                float: left;
+            }
+            #direita{
+                background: #1F2937;
+                height:100% ;
+                width: 60%;
+                float: right;
+                display: flex;
+                justify-content:center ;
+                align-items: center ;
+            }
+            #logo{
+                background-color: #1F2937;
+                height: 90%;
+                aspect-ratio: 1 / 1;
+
+
+            }
+            .login{
+                background: #c1c3c4;
+                padding:40px ;
+                border-radius: 10px ;
+                box-shadow: 0 0 10px rgba(0,0,0,0,.1);
+                width: 300px;
+                height: 45%;
+            }
+            .login h1{
+                text-align:center ;
+                margin-bottom: 20px;
+                color: #FFFFFF;
+            }
+            .login input[type="text"],
+            .login input[type="password"]{
+                width: 100%;
+                padding:10px ;
+                margin: 10px 0;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            .login button {
+                width: 100%;
+                padding:10px ;
+                background-color:#1F2937;
+                border:none ;
+                color: #FFFFFF;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .mens {
+                margin-top: 10px;
+                text-align: center;
+                color: red;
+            }
+            .criar-conta{
+                margin-top:15px;
+                display:flex;
+                align-items:center;
+                justify-content: center;
+                gap:5px;
+            }
+            .criar-conta button{
+                width: 100%;
+                padding:10px ;
+                background-color:rgb(255, 0, 64);
+                border:none ;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            #mensagem1{
+                color: #1F2937;
+            }
+            button:hover{
+                background-color: #364a63;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="esquerda">
+            <div class="login">
+                <h1> LOGIN</h1>
+                <form>
+                    <input type="text" id="usuario1" placeholder="Usuário" required>
+                    <input type="password" id="senha1" placeholder="Senha" required>
+                    <button type="button" onclick="entrar()">ENTRAR</button>
+                    <br><br>
+                    <button type="button" onclick="ca()">CADASTRAR</button>
+                </form>
+                <div class="mens" id="mensagem1"></div>
+                <script>
+                function ca(){
+                window.location.href = "cadastro.html";
+                }
+                function entrar(){
+                    var usuario = document.getElementById("usuario1").value;
+                    var senha = document.getElementById("senha1").value;
+
+                    if(usuario=="moiita" && senha=="1234"){
+                        window.location.href = "principal.html";
+                    }else{
+                        document.getElementById("mensagem1").innerHTML="USUÁRIO OU SENHA INCORRETO. TENTE NOVAMENTE"
+                    }
+                }
+                </script>
+            </div>
+        </div>
+        <div id="direita">
+             <div id="logo">
+                <img src="https://i.postimg.cc/63KZXTM2/logo7moiita.png" height="100%" width="100%">
+             </div>
+        </div>
+    </body>
+</html>
